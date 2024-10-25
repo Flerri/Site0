@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flerry Shop</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
+        /* Dark Theme Colors */
+        body {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+
+        /* Header */
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #00e6e6;
+            font-size: 2em;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #00e6e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Main Section */
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .category {
+            margin: 20px 0;
+            font-size: 1.5em;
+            color: #00e6e6;
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Product Card as Link */
+        .product-card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .product-card {
+            background-color: #333;
+            border: 1px solid #444;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            border-color: #00e6e6;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-color: #222;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1.2em;
+        }
+
+        .product-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #00e6e6;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #00e6e6;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #00cccc;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Flerry Shop</h1>
+        <p>Your premium tech and gadget store</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">Best Sellers</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="category">Featured Products</div>
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <a href="product1.html" class="product-card-link">
+                <div class="product-card">
+                    <div class="product-image">Image</div>
+                    <div class="product-title">Smartphone X</div>
+                    <div class="product-price">$699.99</div>
+                </div>
+            </a>
+
+            <!-- Product Card 2 -->
+            <a href="product2.html" class="product-card-link">
+                <div class="product-card">
+                    <div class="product-image">Image</div>
+                    <div class="product-title">Wireless Earbuds</div>
+                    <div class="product-price">$149.99</div>
+                </div>
+            </a>
+
+            <!-- Product Card 3 -->
+            <a href="product3.html" class="product-card-link">
+                <div class="product-card">
+                    <div class="product-image">Image</div>
+                    <div class="product-title">Smartwatch Z</div>
+                    <div class="product-price">$299.99</div>
+                </div>
+            </a>
+
+            <!-- Product Card 4 -->
+            <a href="product4.html" class="product-card-link">
+                <div class="product-card">
+                    <div class="product-image">Image</div>
+                    <div class="product-title">4K Monitor</div>
+                    <div class="product-price">$399.99</div>
+                </div>
+            </a>
+
+            <!-- Product Card 5 -->
+            <a href="product5.html" class="product-card-link">
+                <div class="product-card">
+                    <div class="product-image">Image</div>
+                    <div class="product-title">Gaming Headset</div>
+                    <div class="product-price">$89.99</div>
+                </div>
+            </a>
+
+            <!-- Product Card 6 -->
+            <a href="product6.html" class="product-card-link">
+                <div class="product-card">
+                    <div class="product-image">Image</div>
+                    <div class="product-title">Mechanical Keyboard</div>
+                    <div class="product-price">$129.99</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 Flerry Shop. All rights reserved.
+    </footer>
+
+</body>
+</html>
